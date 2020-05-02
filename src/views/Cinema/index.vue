@@ -1,12 +1,20 @@
 <template>
 <div>
-  about
+  <Header>喵喵影院</Header>
+  cinema
+  <Footer />
 </div>
 </template>
 
 <script>
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 export default {
-  name: 'index'
+  name: 'Cinema',
+  components: {
+    Header,
+    Footer
+  }
 }
 </script>
 

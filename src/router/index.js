@@ -18,6 +18,10 @@ const routes = [
   {
     path: '/cinema',
     component: () => import('@/views/Cinema')
+  },
+  {
+    path: '/',
+    redirect: '/movie'
   }
 ]
 
