@@ -1,7 +1,7 @@
 <template>
 <div>
   <Header>我的喵喵</Header>
-  movie
+  wode
   <Footer />
 </div>
 </template>
