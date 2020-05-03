@@ -39,7 +39,17 @@ const routes = [
   },
   {
     path: '/cinema',
-    component: () => import('@/views/Cinema')
+    component: () => import('@/views/Cinema'),
+    children: [
+      {
+        path: 'cinemalist',
+        component: () => import('@/components/CinemaList')
+      },
+      {
+        path: '/cinema',
+        redirect: '/cinema/cinemalist'
+      }
+    ]
   },
   {
     path: '/',
