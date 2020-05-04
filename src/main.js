@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
+Vue.filter('replaceStr', function (value) {
+  return value.replace('w.h', '170.230')
+})
 
 new Vue({
   router,
